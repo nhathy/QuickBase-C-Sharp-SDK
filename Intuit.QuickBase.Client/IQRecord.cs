@@ -15,6 +15,7 @@ namespace Intuit.QuickBase.Client
         string this[int index] { get; set; }
         string this[string columnName] { get; set; }
         void AcceptChanges();
+		void UploadFile(string columnName, string filePath);
         void DownloadFile(string columnName, string path, int versionId);
         void ChangeOwnerTo(string newOwner);
         bool Equals(IQRecord record);
